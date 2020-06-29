@@ -1,0 +1,1097 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="微信开启调试, sqeven">
+    <meta name="description" content="https://sqeven.io">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>微信开启调试 | sqeven</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">sqeven</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">sqeven</div>
+        <div class="logo-desc">
+            
+            https://sqeven.io
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/qipeizhen/qipeizhen.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/qipeizhen/qipeizhen.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">微信开启调试</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-06-28
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="PC-Wechat-开启调试"><a href="#PC-Wechat-开启调试" class="headerlink" title="PC Wechat 开启调试"></a>PC Wechat 开启调试</h1><p>作者：御风</p>
+<p>日期：2020年3月27日</p>
+<p>描述：开启微信调试</p>
+<p>版本：2.8.0.133</p>
+<p>[TOC]</p>
+<h2 id="1-参考信息"><a href="#1-参考信息" class="headerlink" title="1. 参考信息"></a>1. 参考信息</h2><p><a href="https://bbs.pediy.com/thread-257116.htm" target="_blank" rel="noopener">PC微信逆向分析の强制输出微信调式信息</a></p>
+<h2 id="2-CE-操作"><a href="#2-CE-操作" class="headerlink" title="2.  CE 操作"></a>2.  CE 操作</h2><h3 id="2-1-定位-是否启用调试"><a href="#2-1-定位-是否启用调试" class="headerlink" title="2.1. 定位 是否启用调试"></a>2.1. 定位 是否启用调试</h3><h4 id="2-1-1-版本-2-8-0-133"><a href="#2-1-1-版本-2-8-0-133" class="headerlink" title="2.1.1. 版本 2.8.0.133"></a>2.1.1. 版本 2.8.0.133</h4><h5 id="基址信息"><a href="#基址信息" class="headerlink" title="基址信息"></a>基址信息</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">WeChatWin.dll + 0x1616B21</span><br><span class="line"></span><br><span class="line"># 微信中这个地址中的数据被设置成 0，因此调试信息将不会输出</span><br><span class="line"># 只要将这个地址中的数据更改为1，那么输出调试信息的开关就被打开了</span><br></pre></td></tr></table></figure>
+
+<h5 id="CE-代码"><a href="#CE-代码" class="headerlink" title="CE 代码"></a>CE 代码</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;CheatTable&gt;</span><br><span class="line">  &lt;CheatEntries&gt;</span><br><span class="line">    &lt;CheatEntry&gt;</span><br><span class="line">      &lt;ID&gt;0&lt;&#x2F;ID&gt;</span><br><span class="line">      &lt;Description&gt;&quot;是否启用调试&quot;&lt;&#x2F;Description&gt;</span><br><span class="line">      &lt;LastState Value&#x3D;&quot;0&quot; RealAddress&#x3D;&quot;54C16B21&quot;&#x2F;&gt;</span><br><span class="line">      &lt;VariableType&gt;4 Bytes&lt;&#x2F;VariableType&gt;</span><br><span class="line">      &lt;Address&gt;WeChatWin.dll + 0x1616B21&lt;&#x2F;Address&gt;</span><br><span class="line">    &lt;&#x2F;CheatEntry&gt;</span><br><span class="line">  &lt;&#x2F;CheatEntries&gt;</span><br><span class="line">&lt;&#x2F;CheatTable&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="特征码"><a href="#特征码" class="headerlink" title="特征码"></a>特征码</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">74 14 FF B5 ?? ?? ?? ?? FF B5 ?? ?? ?? ?? E8 ?? ?? ?? ?? 83</span><br></pre></td></tr></table></figure>
+
+<h5 id="汇编代码"><a href="#汇编代码" class="headerlink" title="汇编代码"></a>汇编代码</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br></pre></td><td class="code"><pre><span class="line">WeChatWin.dll+D0C990 - 55                    - push ebp</span><br><span class="line">WeChatWin.dll+D0C991 - 8B EC                 - mov ebp,esp</span><br><span class="line">WeChatWin.dll+D0C993 - 6A FF                 - push -01 &#123; 255 &#125;</span><br><span class="line">WeChatWin.dll+D0C995 - 68 67ABAA67           - push WeChatWin.dll+118AB67 &#123; (139) &#125;</span><br><span class="line">WeChatWin.dll+D0C99A - 64 A1 00000000        - mov eax,fs:[00000000] &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+D0C9A0 - 50                    - push eax</span><br><span class="line">WeChatWin.dll+D0C9A1 - 81 EC 5C010000        - sub esp,0000015C &#123; 348 &#125;</span><br><span class="line">WeChatWin.dll+D0C9A7 - A1 946BEE67           - mov eax,[WeChatWin.dll+15C6B94] &#123; (-763891070) &#125;</span><br><span class="line">WeChatWin.dll+D0C9AC - 33 C5                 - xor eax,ebp</span><br><span class="line">WeChatWin.dll+D0C9AE - 89 45 F0              - mov [ebp-10],eax</span><br><span class="line">WeChatWin.dll+D0C9B1 - 53                    - push ebx</span><br><span class="line">WeChatWin.dll+D0C9B2 - 56                    - push esi</span><br><span class="line">WeChatWin.dll+D0C9B3 - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0C9B4 - 50                    - push eax</span><br><span class="line">WeChatWin.dll+D0C9B5 - 8D 45 F4              - lea eax,[ebp-0C]</span><br><span class="line">WeChatWin.dll+D0C9B8 - 64 A3 00000000        - mov fs:[00000000],eax &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+D0C9BE - 80 3D 4C6DEE67 00     - cmp byte ptr [WeChatWin.dll+15C6D4C],00 &#123; (0),0 &#125;</span><br><span class="line">WeChatWin.dll+D0C9C5 - 8B 45 08              - mov eax,[ebp+08]</span><br><span class="line">WeChatWin.dll+D0C9C8 - 89 85 E8FEFFFF        - mov [ebp-00000118],eax</span><br><span class="line">WeChatWin.dll+D0C9CE - 8B 45 0C              - mov eax,[ebp+0C]</span><br><span class="line">WeChatWin.dll+D0C9D1 - 89 85 ECFEFFFF        - mov [ebp-00000114],eax</span><br><span class="line">WeChatWin.dll+D0C9D7 - 0F85 B5020000         - jne WeChatWin.dll+D0CC92</span><br><span class="line">WeChatWin.dll+D0C9DD - E8 D7163D00           - call WeChatWin.dll+10DE0B9</span><br><span class="line">WeChatWin.dll+D0C9E2 - 8B 30                 - mov esi,[eax]</span><br><span class="line">WeChatWin.dll+D0C9E4 - 89 B5 E4FEFFFF        - mov [ebp-0000011C],esi</span><br><span class="line">WeChatWin.dll+D0C9EA - A1 706FF367           - mov eax,[WeChatWin.dll+1616F70] &#123; (3) &#125;</span><br><span class="line">WeChatWin.dll+D0C9EF - C7 45 FC 00000000     - mov [ebp-04],00000000 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+D0C9F6 - A8 01                 - test al,01 &#123; 1 &#125;</span><br><span class="line">WeChatWin.dll+D0C9F8 - 75 2A                 - jne WeChatWin.dll+D0CA24</span><br><span class="line">WeChatWin.dll+D0C9FA - 83 C8 01              - or eax,01 &#123; 1 &#125;</span><br><span class="line">WeChatWin.dll+D0C9FD - A3 706FF367           - mov [WeChatWin.dll+1616F70],eax &#123; (3) &#125;</span><br><span class="line">WeChatWin.dll+D0CA02 - FF 15 68E2B167        - call dword ptr [WeChatWin.dll+11FE268] &#123; -&gt;-&gt;KERNELBASE.TlsAlloc &#125;</span><br><span class="line">WeChatWin.dll+D0CA08 - 68 2046B167           - push WeChatWin.dll+11F4620 &#123; (255) &#125;</span><br><span class="line">WeChatWin.dll+D0CA0D - A3 686FF367           - mov [WeChatWin.dll+1616F68],eax &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CA12 - C7 05 6C6FF367 00000000 - mov [WeChatWin.dll+1616F6C],00000000 &#123; (0),0 &#125;</span><br><span class="line">WeChatWin.dll+D0CA1C - E8 691AFDFF           - call WeChatWin.dll+CDE48A</span><br><span class="line">WeChatWin.dll+D0CA21 - 83 C4 04              - add esp,04 &#123; 4 &#125;</span><br><span class="line">WeChatWin.dll+D0CA24 - FF 35 686FF367        - push [WeChatWin.dll+1616F68] &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CA2A - 8B 1D 64E2B167        - mov ebx,[WeChatWin.dll+11FE264] &#123; (76EBEF40) &#125;</span><br><span class="line">WeChatWin.dll+D0CA30 - C7 85 E0FEFFFF 686FF367 - mov [ebp-00000120],WeChatWin.dll+1616F68 &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CA3A - FF D3                 - call ebx</span><br><span class="line">WeChatWin.dll+D0CA3C - 8D 78 01              - lea edi,[eax+01]</span><br><span class="line">WeChatWin.dll+D0CA3F - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CA40 - FF 35 686FF367        - push [WeChatWin.dll+1616F68] &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CA46 - FF 15 58E2B167        - call dword ptr [WeChatWin.dll+11FE258] &#123; -&gt;KERNEL32.TlsSetValue &#125;</span><br><span class="line">WeChatWin.dll+D0CA4C - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CA4D - FF 35 6C6FF367        - push [WeChatWin.dll+1616F6C] &#123; (0) &#125;</span><br><span class="line">WeChatWin.dll+D0CA53 - 68 686FF367           - push WeChatWin.dll+1616F68 &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CA58 - E8 B3060800           - call WeChatWin.dll+D8D110</span><br><span class="line">WeChatWin.dll+D0CA5D - 83 C4 0C              - add esp,0C &#123; 12 &#125;</span><br><span class="line">WeChatWin.dll+D0CA60 - A1 706FF367           - mov eax,[WeChatWin.dll+1616F70] &#123; (3) &#125;</span><br><span class="line">WeChatWin.dll+D0CA65 - C6 45 FC 01           - mov byte ptr [ebp-04],01 &#123; 1 &#125;</span><br><span class="line">WeChatWin.dll+D0CA69 - A8 02                 - test al,02 &#123; 2 &#125;</span><br><span class="line">WeChatWin.dll+D0CA6B - 75 2A                 - jne WeChatWin.dll+D0CA97</span><br><span class="line">WeChatWin.dll+D0CA6D - 83 C8 02              - or eax,02 &#123; 2 &#125;</span><br><span class="line">WeChatWin.dll+D0CA70 - A3 706FF367           - mov [WeChatWin.dll+1616F70],eax &#123; (3) &#125;</span><br><span class="line">WeChatWin.dll+D0CA75 - FF 15 68E2B167        - call dword ptr [WeChatWin.dll+11FE268] &#123; -&gt;-&gt;KERNELBASE.TlsAlloc &#125;</span><br><span class="line">WeChatWin.dll+D0CA7B - 68 9043B167           - push WeChatWin.dll+11F4390 &#123; (255) &#125;</span><br><span class="line">WeChatWin.dll+D0CA80 - A3 746FF367           - mov [WeChatWin.dll+1616F74],eax &#123; (55) &#125;</span><br><span class="line">WeChatWin.dll+D0CA85 - C7 05 786FF367 30E39F67 - mov [WeChatWin.dll+1616F78],WeChatWin.dll+10DE330 &#123; (679FE330),(8686313) &#125;</span><br><span class="line">WeChatWin.dll+D0CA8F - E8 F619FDFF           - call WeChatWin.dll+CDE48A</span><br><span class="line">WeChatWin.dll+D0CA94 - 83 C4 04              - add esp,04 &#123; 4 &#125;</span><br><span class="line"></span><br><span class="line"># --------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">WeChatWin.dll+D0CA97 - 80 3D 216BF367 00     - cmp byte ptr [WeChatWin.dll+1616B21],00 &#123; (0),0 &#125;</span><br><span class="line"></span><br><span class="line"># ↑ WeChatWin.dll+1616B21 就是 是否启动调试 的地址</span><br><span class="line"></span><br><span class="line">WeChatWin.dll+D0CA9E - 74 14                 - je WeChatWin.dll+D0CAB4</span><br><span class="line">WeChatWin.dll+D0CAA0 - FF B5 ECFEFFFF        - push [ebp-00000114]</span><br><span class="line">WeChatWin.dll+D0CAA6 - FF B5 E8FEFFFF        - push [ebp-00000118]</span><br><span class="line">WeChatWin.dll+D0CAAC - E8 AF3CFEFF           - call WeChatWin.dll+CF0760</span><br><span class="line"></span><br><span class="line"># ↑ [2.3 节 定位 调试数据代码段] 在此处下断点，断点触发跟进 WeChatWin.dll+CF0760</span><br><span class="line"></span><br><span class="line"># --------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">WeChatWin.dll+D0CAB1 - 83 C4 08              - add esp,08 &#123; 8 &#125;</span><br><span class="line">WeChatWin.dll+D0CAB4 - FF 35 686FF367        - push [WeChatWin.dll+1616F68] &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CABA - FF D3                 - call ebx</span><br><span class="line">WeChatWin.dll+D0CABC - 83 F8 02              - cmp eax,02 &#123; 2 &#125;</span><br><span class="line">WeChatWin.dll+D0CABF - 0F8C 2C010000         - jl WeChatWin.dll+D0CBF1</span><br><span class="line">WeChatWin.dll+D0CAC5 - FF 35 746FF367        - push [WeChatWin.dll+1616F74] &#123; (55) &#125;</span><br><span class="line">WeChatWin.dll+D0CACB - FF D3                 - call ebx</span><br><span class="line">WeChatWin.dll+D0CACD - 85 C0                 - test eax,eax</span><br><span class="line">WeChatWin.dll+D0CACF - 0F85 1C010000         - jne WeChatWin.dll+D0CBF1</span><br><span class="line">WeChatWin.dll+D0CAD5 - FF 35 686FF367        - push [WeChatWin.dll+1616F68] &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CADB - FF D3                 - call ebx</span><br><span class="line">WeChatWin.dll+D0CADD - 83 F8 0A              - cmp eax,0A &#123; 10 &#125;</span><br><span class="line">WeChatWin.dll+D0CAE0 - 0F8F 75010000         - jg WeChatWin.dll+D0CC5B</span><br><span class="line">WeChatWin.dll+D0CAE6 - 6A 01                 - push 01 &#123; 1 &#125;</span><br><span class="line">WeChatWin.dll+D0CAE8 - 68 00400000           - push 00004000 &#123; 16384 &#125;</span><br><span class="line">WeChatWin.dll+D0CAED - E8 D6293D00           - call WeChatWin.dll+10DF4C8</span><br><span class="line">WeChatWin.dll+D0CAF2 - 83 C4 08              - add esp,08 &#123; 8 &#125;</span><br><span class="line">WeChatWin.dll+D0CAF5 - 8B F8                 - mov edi,eax</span><br><span class="line">WeChatWin.dll+D0CAF7 - A1 58E2B167           - mov eax,[WeChatWin.dll+11FE258] &#123; (76EBEF90) &#125;</span><br><span class="line">WeChatWin.dll+D0CAFC - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CAFD - FF 35 746FF367        - push [WeChatWin.dll+1616F74] &#123; (55) &#125;</span><br><span class="line">WeChatWin.dll+D0CB03 - FF D0                 - call eax</span><br><span class="line">WeChatWin.dll+D0CB05 - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CB06 - FF 35 786FF367        - push [WeChatWin.dll+1616F78] &#123; (679FE330) &#125;</span><br><span class="line">WeChatWin.dll+D0CB0C - 68 746FF367           - push WeChatWin.dll+1616F74 &#123; (55) &#125;</span><br><span class="line">WeChatWin.dll+D0CB11 - E8 FA050800           - call WeChatWin.dll+D8D110</span><br><span class="line">WeChatWin.dll+D0CB16 - 8B 85 E8FEFFFF        - mov eax,[ebp-00000118]</span><br><span class="line">WeChatWin.dll+D0CB1C - 68 00010000           - push 00000100 &#123; 256 &#125;</span><br><span class="line">WeChatWin.dll+D0CB21 - 6A 00                 - push 00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+D0CB23 - 0F10 00               - movups xmm0,[eax]</span><br><span class="line">WeChatWin.dll+D0CB26 - 0F11 85 98FEFFFF      - movups [ebp-00000168],xmm0</span><br><span class="line">WeChatWin.dll+D0CB2D - C7 85 98FEFFFF 05000000 - mov [ebp-00000168],00000005 &#123; 5 &#125;</span><br><span class="line">WeChatWin.dll+D0CB37 - 0F10 40 10            - movups xmm0,[eax+10]</span><br><span class="line">WeChatWin.dll+D0CB3B - 0F11 85 A8FEFFFF      - movups [ebp-00000158],xmm0</span><br><span class="line">WeChatWin.dll+D0CB42 - 0F10 40 20            - movups xmm0,[eax+20]</span><br><span class="line">WeChatWin.dll+D0CB46 - 0F11 85 B8FEFFFF      - movups [ebp-00000148],xmm0</span><br><span class="line">WeChatWin.dll+D0CB4D - F3 0F7E 40 30         - movq xmm0,[eax+30]</span><br><span class="line">WeChatWin.dll+D0CB52 - 8D 85 F0FEFFFF        - lea eax,[ebp-00000110]</span><br><span class="line">WeChatWin.dll+D0CB58 - 50                    - push eax</span><br><span class="line">WeChatWin.dll+D0CB59 - 66 0FD6 85 C8FEFFFF   - movq [ebp-00000138],xmm0</span><br><span class="line">WeChatWin.dll+D0CB61 - E8 CAAA3B00           - call WeChatWin.dll+10C7630</span><br><span class="line">WeChatWin.dll+D0CB66 - 83 C4 18              - add esp,18 &#123; 24 &#125;</span><br><span class="line">WeChatWin.dll+D0CB69 - FF 35 686FF367        - push [WeChatWin.dll+1616F68] &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CB6F - FF D3                 - call ebx</span><br><span class="line">WeChatWin.dll+D0CB71 - 50                    - push eax</span><br><span class="line">WeChatWin.dll+D0CB72 - 68 2C4DB967           - push WeChatWin.dll+1274D2C &#123; (&quot;ERROR!!! xlogger_appender Recursive calls!!!, count:%d&quot;) &#125;</span><br><span class="line">WeChatWin.dll+D0CB77 - 8D 85 F0FEFFFF        - lea eax,[ebp-00000110]</span><br><span class="line">WeChatWin.dll+D0CB7D - 68 00010000           - push 00000100 &#123; 256 &#125;</span><br><span class="line">WeChatWin.dll+D0CB82 - 50                    - push eax</span><br><span class="line">WeChatWin.dll+D0CB83 - E8 C8455BFF           - call WeChatWin.dll+2C1150</span><br><span class="line">WeChatWin.dll+D0CB88 - 83 C4 10              - add esp,10 &#123; 16 &#125;</span><br><span class="line">WeChatWin.dll+D0CB8B - 8D 8D D0FEFFFF        - lea ecx,[ebp-00000130]</span><br><span class="line">WeChatWin.dll+D0CB91 - 68 00400000           - push 00004000 &#123; 16384 &#125;</span><br><span class="line">WeChatWin.dll+D0CB96 - 6A 00                 - push 00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+D0CB98 - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CB99 - E8 820D0800           - call WeChatWin.dll+D8D920</span><br><span class="line">WeChatWin.dll+D0CB9E - 8D 85 D0FEFFFF        - lea eax,[ebp-00000130]</span><br><span class="line">WeChatWin.dll+D0CBA4 - C6 45 FC 02           - mov byte ptr [ebp-04],02 &#123; 2 &#125;</span><br><span class="line">WeChatWin.dll+D0CBA8 - 50                    - push eax</span><br><span class="line">WeChatWin.dll+D0CBA9 - 8D 85 F0FEFFFF        - lea eax,[ebp-00000110]</span><br><span class="line">WeChatWin.dll+D0CBAF - 50                    - push eax</span><br><span class="line">WeChatWin.dll+D0CBB0 - 8D 85 98FEFFFF        - lea eax,[ebp-00000168]</span><br><span class="line">WeChatWin.dll+D0CBB6 - 50                    - push eax</span><br><span class="line">WeChatWin.dll+D0CBB7 - E8 F4270800           - call WeChatWin.dll+D8F3B0</span><br><span class="line">WeChatWin.dll+D0CBBC - 68 00100000           - push 00001000 &#123; 4096 &#125;</span><br><span class="line">WeChatWin.dll+D0CBC1 - FF B5 ECFEFFFF        - push [ebp-00000114]</span><br><span class="line">WeChatWin.dll+D0CBC7 - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CBC8 - E8 A3653D00           - call WeChatWin.dll+10E3170</span><br><span class="line">WeChatWin.dll+D0CBCD - 8D 85 98FEFFFF        - lea eax,[ebp-00000168]</span><br><span class="line">WeChatWin.dll+D0CBD3 - C6 87 FF0F0000 00     - mov byte ptr [edi+00000FFF],00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+D0CBDA - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CBDB - 50                    - push eax</span><br><span class="line">WeChatWin.dll+D0CBDC - E8 7F3BFEFF           - call WeChatWin.dll+CF0760</span><br><span class="line">WeChatWin.dll+D0CBE1 - 83 C4 20              - add esp,20 &#123; 32 &#125;</span><br><span class="line">WeChatWin.dll+D0CBE4 - 8D 8D D0FEFFFF        - lea ecx,[ebp-00000130]</span><br><span class="line">WeChatWin.dll+D0CBEA - E8 116B33FF           - call WeChatWin.dll+43700</span><br><span class="line">WeChatWin.dll+D0CBEF - EB 6A                 - jmp WeChatWin.dll+D0CC5B</span><br><span class="line">WeChatWin.dll+D0CBF1 - FF 35 746FF367        - push [WeChatWin.dll+1616F74] &#123; (55) &#125;</span><br><span class="line">WeChatWin.dll+D0CBF7 - FF D3                 - call ebx</span><br><span class="line">WeChatWin.dll+D0CBF9 - 85 C0                 - test eax,eax</span><br><span class="line">WeChatWin.dll+D0CBFB - 74 3A                 - je WeChatWin.dll+D0CC37</span><br><span class="line">WeChatWin.dll+D0CBFD - FF 35 746FF367        - push [WeChatWin.dll+1616F74] &#123; (55) &#125;</span><br><span class="line">WeChatWin.dll+D0CC03 - FF D3                 - call ebx</span><br><span class="line">WeChatWin.dll+D0CC05 - 6A 00                 - push 00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+D0CC07 - FF 35 746FF367        - push [WeChatWin.dll+1616F74] &#123; (55) &#125;</span><br><span class="line">WeChatWin.dll+D0CC0D - 8B F8                 - mov edi,eax</span><br><span class="line">WeChatWin.dll+D0CC0F - A1 58E2B167           - mov eax,[WeChatWin.dll+11FE258] &#123; (76EBEF90) &#125;</span><br><span class="line">WeChatWin.dll+D0CC14 - FF D0                 - call eax</span><br><span class="line">WeChatWin.dll+D0CC16 - 6A 00                 - push 00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+D0CC18 - FF 35 786FF367        - push [WeChatWin.dll+1616F78] &#123; (679FE330) &#125;</span><br><span class="line">WeChatWin.dll+D0CC1E - 68 746FF367           - push WeChatWin.dll+1616F74 &#123; (55) &#125;</span><br><span class="line">WeChatWin.dll+D0CC23 - E8 E8040800           - call WeChatWin.dll+D8D110</span><br><span class="line">WeChatWin.dll+D0CC28 - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CC29 - E8 F2E5FFFF           - call WeChatWin.dll+D0B220</span><br><span class="line">WeChatWin.dll+D0CC2E - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CC2F - E8 FC163D00           - call WeChatWin.dll+10DE330</span><br><span class="line">WeChatWin.dll+D0CC34 - 83 C4 14              - add esp,14 &#123; 20 &#125;</span><br><span class="line">WeChatWin.dll+D0CC37 - 83 3D 446BF367 01     - cmp dword ptr [WeChatWin.dll+1616B44],01 &#123; (0),1 &#125;</span><br><span class="line">WeChatWin.dll+D0CC3E - FF B5 ECFEFFFF        - push [ebp-00000114]</span><br><span class="line">WeChatWin.dll+D0CC44 - FF B5 E8FEFFFF        - push [ebp-00000118]</span><br><span class="line">WeChatWin.dll+D0CC4A - 75 07                 - jne WeChatWin.dll+D0CC53</span><br><span class="line">WeChatWin.dll+D0CC4C - E8 6FC7FFFF           - call WeChatWin.dll+D093C0</span><br><span class="line">WeChatWin.dll+D0CC51 - EB 05                 - jmp WeChatWin.dll+D0CC58</span><br><span class="line">WeChatWin.dll+D0CC53 - E8 C8C5FFFF           - call WeChatWin.dll+D09220</span><br><span class="line">WeChatWin.dll+D0CC58 - 83 C4 08              - add esp,08 &#123; 8 &#125;</span><br><span class="line">WeChatWin.dll+D0CC5B - FF 35 686FF367        - push [WeChatWin.dll+1616F68] &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CC61 - C6 45 FC 03           - mov byte ptr [ebp-04],03 &#123; 3 &#125;</span><br><span class="line">WeChatWin.dll+D0CC65 - FF D3                 - call ebx</span><br><span class="line">WeChatWin.dll+D0CC67 - 8D 78 FF              - lea edi,[eax-01]</span><br><span class="line">WeChatWin.dll+D0CC6A - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CC6B - FF 35 686FF367        - push [WeChatWin.dll+1616F68] &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CC71 - FF 15 58E2B167        - call dword ptr [WeChatWin.dll+11FE258] &#123; -&gt;KERNEL32.TlsSetValue &#125;</span><br><span class="line">WeChatWin.dll+D0CC77 - 57                    - push edi</span><br><span class="line">WeChatWin.dll+D0CC78 - FF 35 6C6FF367        - push [WeChatWin.dll+1616F6C] &#123; (0) &#125;</span><br><span class="line">WeChatWin.dll+D0CC7E - 68 686FF367           - push WeChatWin.dll+1616F68 &#123; (54) &#125;</span><br><span class="line">WeChatWin.dll+D0CC83 - E8 88040800           - call WeChatWin.dll+D8D110</span><br><span class="line">WeChatWin.dll+D0CC88 - 83 C4 0C              - add esp,0C &#123; 12 &#125;</span><br><span class="line">WeChatWin.dll+D0CC8B - E8 29143D00           - call WeChatWin.dll+10DE0B9</span><br><span class="line">WeChatWin.dll+D0CC90 - 89 30                 - mov [eax],esi</span><br><span class="line">WeChatWin.dll+D0CC92 - 8B 4D F4              - mov ecx,[ebp-0C]</span><br><span class="line">WeChatWin.dll+D0CC95 - 64 89 0D 00000000     - mov fs:[00000000],ecx &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+D0CC9C - 59                    - pop ecx</span><br><span class="line">WeChatWin.dll+D0CC9D - 5F                    - pop edi</span><br><span class="line">WeChatWin.dll+D0CC9E - 5E                    - pop esi</span><br><span class="line">WeChatWin.dll+D0CC9F - 5B                    - pop ebx</span><br><span class="line">WeChatWin.dll+D0CCA0 - 8B 4D F0              - mov ecx,[ebp-10]</span><br><span class="line">WeChatWin.dll+D0CCA3 - 33 CD                 - xor ecx,ebp</span><br><span class="line">WeChatWin.dll+D0CCA5 - E8 3314FDFF           - call WeChatWin.dll+CDE0DD</span><br><span class="line">WeChatWin.dll+D0CCAA - 8B E5                 - mov esp,ebp</span><br><span class="line">WeChatWin.dll+D0CCAC - 5D                    - pop ebp</span><br><span class="line">WeChatWin.dll+D0CCAD - C3                    - ret</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-定位-调试级别"><a href="#2-2-定位-调试级别" class="headerlink" title="2.2. 定位 调试级别"></a>2.2. 定位 调试级别</h3><h4 id="2-2-1-版本-2-8-0-133"><a href="#2-2-1-版本-2-8-0-133" class="headerlink" title="2.2.1. 版本 2.8.0.133"></a>2.2.1. 版本 2.8.0.133</h4><h5 id="基址信息-1"><a href="#基址信息-1" class="headerlink" title="基址信息"></a>基址信息</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">WeChatWin.dll + 0x15C6D54</span><br><span class="line"></span><br><span class="line"># 微信中这个地址中的数据被设置成 2，也就是高于 kLevelDebug 的信息才会被输出</span><br><span class="line"># 只要将这个地址中的数据更改为 0，也就是 kLevelAll 或 kLevelVerbose，也就是输出全部调试信息</span><br></pre></td></tr></table></figure>
+
+<h5 id="CE-代码-1"><a href="#CE-代码-1" class="headerlink" title="CE 代码"></a>CE 代码</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;CheatTable&gt;</span><br><span class="line">  &lt;CheatEntries&gt;</span><br><span class="line">    &lt;CheatEntry&gt;</span><br><span class="line">      &lt;ID&gt;1&lt;&#x2F;ID&gt;</span><br><span class="line">      &lt;Description&gt;&quot;调试级别&quot;&lt;&#x2F;Description&gt;</span><br><span class="line">      &lt;LastState Value&#x3D;&quot;2&quot; RealAddress&#x3D;&quot;54BC6D54&quot;&#x2F;&gt;</span><br><span class="line">      &lt;VariableType&gt;4 Bytes&lt;&#x2F;VariableType&gt;</span><br><span class="line">      &lt;Address&gt;WeChatWin.dll + 0x15C6D54&lt;&#x2F;Address&gt;</span><br><span class="line">    &lt;&#x2F;CheatEntry&gt;</span><br><span class="line">  &lt;&#x2F;CheatEntries&gt;</span><br><span class="line">&lt;&#x2F;CheatTable&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="特征码-1"><a href="#特征码-1" class="headerlink" title="特征码"></a>特征码</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">56 89 9D F0 FB FF FF</span><br></pre></td></tr></table></figure>
+
+<h5 id="汇编代码-1"><a href="#汇编代码-1" class="headerlink" title="汇编代码"></a>汇编代码</h5><p>第一段函数代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br></pre></td><td class="code"><pre><span class="line">WeChatWin.dll+CE1430 - 55                    - push ebp</span><br><span class="line">WeChatWin.dll+CE1431 - 8B EC                 - mov ebp,esp</span><br><span class="line">WeChatWin.dll+CE1433 - 81 EC 10040000        - sub esp,00000410 &#123; 1040 &#125;</span><br><span class="line">WeChatWin.dll+CE1439 - A1 946BEE67           - mov eax,[WeChatWin.dll+15C6B94] &#123; (-763891070) &#125;</span><br><span class="line">WeChatWin.dll+CE143E - 33 C5                 - xor eax,ebp</span><br><span class="line">WeChatWin.dll+CE1440 - 89 45 FC              - mov [ebp-04],eax</span><br><span class="line">WeChatWin.dll+CE1443 - 8B 45 10              - mov eax,[ebp+10]</span><br><span class="line">WeChatWin.dll+CE1446 - 53                    - push ebx</span><br><span class="line">WeChatWin.dll+CE1447 - 56                    - push esi</span><br><span class="line">WeChatWin.dll+CE1448 - 8B 75 08              - mov esi,[ebp+08]</span><br><span class="line">WeChatWin.dll+CE144B - 8B D9                 - mov ebx,ecx</span><br><span class="line">WeChatWin.dll+CE144D - 57                    - push edi</span><br><span class="line">WeChatWin.dll+CE144E - 89 85 F8FBFFFF        - mov [ebp-00000408],eax</span><br><span class="line">WeChatWin.dll+CE1454 - 8B 45 20              - mov eax,[ebp+20]</span><br><span class="line">WeChatWin.dll+CE1457 - 56                    - push esi</span><br><span class="line">WeChatWin.dll+CE1458 - 89 9D F0FBFFFF        - mov [ebp-00000410],ebx</span><br><span class="line">WeChatWin.dll+CE145E - 89 85 F4FBFFFF        - mov [ebp-0000040C],eax</span><br><span class="line"></span><br><span class="line"># --------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">WeChatWin.dll+CE1464 - E8 F7BD0200           - call WeChatWin.dll+D0D260</span><br><span class="line"></span><br><span class="line"># ↑ 跟入此 Call 地址：WeChatWin.dll+D0D260，请看第二段函数代码分析</span><br><span class="line"></span><br><span class="line"># --------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">WeChatWin.dll+CE1469 - 85 C0                 - test eax,eax</span><br><span class="line">WeChatWin.dll+CE146B - 8D 7B 08              - lea edi,[ebx+08]</span><br><span class="line">WeChatWin.dll+CE146E - 6A 38                 - push 38 &#123; 56 &#125;</span><br><span class="line">WeChatWin.dll+CE1470 - 0F95 C0               - setne al</span><br><span class="line">WeChatWin.dll+CE1473 - 6A 00                 - push 00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+CE1475 - 57                    - push edi</span><br><span class="line">WeChatWin.dll+CE1476 - 88 03                 - mov [ebx],al</span><br><span class="line">WeChatWin.dll+CE1478 - E8 B3613E00           - call WeChatWin.dll+10C7630</span><br><span class="line">WeChatWin.dll+CE147D - 0F57 C0               - xorps xmm0,xmm0</span><br><span class="line">WeChatWin.dll+CE1480 - 83 C4 10              - add esp,10 &#123; 16 &#125;</span><br><span class="line">WeChatWin.dll+CE1483 - 66 0FD6 83 C0000000   - movq [ebx+000000C0],xmm0</span><br><span class="line">WeChatWin.dll+CE148B - C7 83 DC000000 0F000000 - mov [ebx+000000DC],0000000F &#123; 15 &#125;</span><br><span class="line">WeChatWin.dll+CE1495 - C7 83 D8000000 00000000 - mov [ebx+000000D8],00000000 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+CE149F - C6 83 C8000000 00     - mov byte ptr [ebx+000000C8],00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+CE14A6 - 80 3B 00              - cmp byte ptr [ebx],00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+CE14A9 - 89 37                 - mov [edi],esi</span><br><span class="line">WeChatWin.dll+CE14AB - 0F84 C7000000         - je WeChatWin.dll+CE1578</span><br><span class="line">WeChatWin.dll+CE14B1 - 8B 45 0C              - mov eax,[ebp+0C]</span><br><span class="line">WeChatWin.dll+CE14B4 - 8D 73 1C              - lea esi,[ebx+1C]</span><br><span class="line">WeChatWin.dll+CE14B7 - 89 43 0C              - mov [ebx+0C],eax</span><br><span class="line">WeChatWin.dll+CE14BA - 8B 45 14              - mov eax,[ebp+14]</span><br><span class="line">WeChatWin.dll+CE14BD - 89 43 10              - mov [ebx+10],eax</span><br><span class="line">WeChatWin.dll+CE14C0 - 8B 45 18              - mov eax,[ebp+18]</span><br><span class="line">WeChatWin.dll+CE14C3 - 89 43 14              - mov [ebx+14],eax</span><br><span class="line">WeChatWin.dll+CE14C6 - 8B 45 1C              - mov eax,[ebp+1C]</span><br><span class="line">WeChatWin.dll+CE14C9 - 6A 00                 - push 00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+CE14CB - 56                    - push esi</span><br><span class="line">WeChatWin.dll+CE14CC - 89 43 18              - mov [ebx+18],eax</span><br><span class="line">WeChatWin.dll+CE14CF - E8 5C660300           - call WeChatWin.dll+D17B30</span><br><span class="line">WeChatWin.dll+CE14D4 - 68 80000000           - push 00000080 &#123; 128 &#125;</span><br><span class="line">WeChatWin.dll+CE14D9 - FF B5 F8FBFFFF        - push [ebp-00000408]</span><br><span class="line">WeChatWin.dll+CE14DF - 8D 7B 40              - lea edi,[ebx+40]</span><br><span class="line">WeChatWin.dll+CE14E2 - C7 43 28 FFFFFFFF     - mov [ebx+28],FFFFFFFF &#123; -1 &#125;</span><br><span class="line">WeChatWin.dll+CE14E9 - 57                    - push edi</span><br><span class="line">WeChatWin.dll+CE14EA - C7 43 2C FFFFFFFF     - mov [ebx+2C],FFFFFFFF &#123; -1 &#125;</span><br><span class="line">WeChatWin.dll+CE14F1 - C7 43 30 FFFFFFFF     - mov [ebx+30],FFFFFFFF &#123; -1 &#125;</span><br><span class="line">WeChatWin.dll+CE14F8 - C7 43 34 FFFFFFFF     - mov [ebx+34],FFFFFFFF &#123; -1 &#125;</span><br><span class="line">WeChatWin.dll+CE14FF - C7 43 38 FFFFFFFF     - mov [ebx+38],FFFFFFFF &#123; -1 &#125;</span><br><span class="line">WeChatWin.dll+CE1506 - C7 43 3C FFFFFFFF     - mov [ebx+3C],FFFFFFFF &#123; -1 &#125;</span><br><span class="line">WeChatWin.dll+CE150D - E8 2EEE3F00           - call WeChatWin.dll+10E0340</span><br><span class="line">WeChatWin.dll+CE1512 - C6 83 BF000000 00     - mov byte ptr [ebx+000000BF],00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+CE1519 - 8B 06                 - mov eax,[esi]</span><br><span class="line">WeChatWin.dll+CE151B - 89 83 C0000000        - mov [ebx+000000C0],eax</span><br><span class="line">WeChatWin.dll+CE1521 - 8B 46 04              - mov eax,[esi+04]</span><br><span class="line">WeChatWin.dll+CE1524 - 68 00040000           - push 00000400 &#123; 1024 &#125;</span><br><span class="line">WeChatWin.dll+CE1529 - 89 83 C4000000        - mov [ebx+000000C4],eax</span><br><span class="line">WeChatWin.dll+CE152F - 8D 85 FCFBFFFF        - lea eax,[ebp-00000404]</span><br><span class="line">WeChatWin.dll+CE1535 - 6A 00                 - push 00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+CE1537 - 50                    - push eax</span><br><span class="line">WeChatWin.dll+CE1538 - E8 F3603E00           - call WeChatWin.dll+10C7630</span><br><span class="line">WeChatWin.dll+CE153D - 8B 8D F4FBFFFF        - mov ecx,[ebp-0000040C]</span><br><span class="line">WeChatWin.dll+CE1543 - B8 58CEC867           - mov eax,WeChatWin.dll+136CE58 &#123; (0) &#125;</span><br><span class="line">WeChatWin.dll+CE1548 - 85 C9                 - test ecx,ecx</span><br><span class="line">WeChatWin.dll+CE154A - 0F45 C1               - cmovne eax,ecx</span><br><span class="line">WeChatWin.dll+CE154D - 50                    - push eax</span><br><span class="line">WeChatWin.dll+CE154E - 57                    - push edi</span><br><span class="line">WeChatWin.dll+CE154F - 68 F81AB967           - push WeChatWin.dll+1271AF8 &#123; (&quot;-&gt; %s %s&quot;) &#125;</span><br><span class="line">WeChatWin.dll+CE1554 - 8D 85 FCFBFFFF        - lea eax,[ebp-00000404]</span><br><span class="line">WeChatWin.dll+CE155A - 68 00040000           - push 00000400 &#123; 1024 &#125;</span><br><span class="line">WeChatWin.dll+CE155F - 50                    - push eax</span><br><span class="line">WeChatWin.dll+CE1560 - E8 EBFB5DFF           - call WeChatWin.dll+2C1150</span><br><span class="line">WeChatWin.dll+CE1565 - 8D 85 FCFBFFFF        - lea eax,[ebp-00000404]</span><br><span class="line">WeChatWin.dll+CE156B - 50                    - push eax</span><br><span class="line">WeChatWin.dll+CE156C - 8D 43 08              - lea eax,[ebx+08]</span><br><span class="line">WeChatWin.dll+CE156F - 50                    - push eax</span><br><span class="line">WeChatWin.dll+CE1570 - E8 3BBD0200           - call WeChatWin.dll+D0D2B0</span><br><span class="line">WeChatWin.dll+CE1575 - 83 C4 3C              - add esp,3C &#123; 60 &#125;</span><br><span class="line">WeChatWin.dll+CE1578 - 8B 4D FC              - mov ecx,[ebp-04]</span><br><span class="line">WeChatWin.dll+CE157B - 8B C3                 - mov eax,ebx</span><br><span class="line">WeChatWin.dll+CE157D - 5F                    - pop edi</span><br><span class="line">WeChatWin.dll+CE157E - 5E                    - pop esi</span><br><span class="line">WeChatWin.dll+CE157F - 33 CD                 - xor ecx,ebp</span><br><span class="line">WeChatWin.dll+CE1581 - 5B                    - pop ebx</span><br><span class="line">WeChatWin.dll+CE1582 - E8 56CBFFFF           - call WeChatWin.dll+CDE0DD</span><br><span class="line">WeChatWin.dll+CE1587 - 8B E5                 - mov esp,ebp</span><br><span class="line">WeChatWin.dll+CE1589 - 5D                    - pop ebp</span><br><span class="line">WeChatWin.dll+CE158A - C2 1C00               - ret 001C &#123; 28 &#125;</span><br></pre></td></tr></table></figure>
+
+<p>第二段函数代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">WeChatWin.dll+D0D260 - 55                    - push ebp</span><br><span class="line">WeChatWin.dll+D0D261 - 8B EC                 - mov ebp,esp</span><br><span class="line"></span><br><span class="line"># --------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">WeChatWin.dll+D0D263 - 8B 0D 546DEE67        - mov ecx,[WeChatWin.dll+15C6D54] &#123; (2) &#125;</span><br><span class="line"></span><br><span class="line"># ↑ WeChatWin.dll+15C6D54 就是 调试级别 的地址</span><br><span class="line"></span><br><span class="line"># --------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">WeChatWin.dll+D0D269 - 33 C0                 - xor eax,eax</span><br><span class="line">WeChatWin.dll+D0D26B - 3B 4D 08              - cmp ecx,[ebp+08]</span><br><span class="line">WeChatWin.dll+D0D26E - 0F9E C0               - setle al</span><br><span class="line">WeChatWin.dll+D0D271 - 5D                    - pop ebp</span><br><span class="line">WeChatWin.dll+D0D272 - C3                    - ret</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3-定位-调试数据代码段"><a href="#2-3-定位-调试数据代码段" class="headerlink" title="2.3. 定位 调试数据代码段"></a>2.3. 定位 调试数据代码段</h3><h4 id="2-3-1-版本-2-8-0-133"><a href="#2-3-1-版本-2-8-0-133" class="headerlink" title="2.3.1. 版本 2.8.0.133"></a>2.3.1. 版本 2.8.0.133</h4><h5 id="基址信息-2"><a href="#基址信息-2" class="headerlink" title="基址信息"></a>基址信息</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">WeChatWin.dll + 0xCF0813</span><br><span class="line"></span><br><span class="line"># 需要 Hook 6 字节：</span><br><span class="line"># WeChatWin.dll+CF0813 - 83 C4 4C              - add esp,4C &#123; 76 &#125;</span><br><span class="line"># WeChatWin.dll+CF0816 - 5E                    - pop esi</span><br><span class="line"># WeChatWin.dll+CF0817 - 85 C9                 - test ecx,ecx</span><br><span class="line"></span><br><span class="line"># 调试输出数据地址为：[ebp - 0x40E0]</span><br></pre></td></tr></table></figure>
+
+<h5 id="断点调试"><a href="#断点调试" class="headerlink" title="断点调试"></a>断点调试</h5><p>在找到 <code>是否启动调试</code> 基址后，下断点（参考 2.1.1 节 汇编代码 中的注释）</p>
+<p>触发断点后，先 F7 单步步入 <code>call WeChatWin.dll+D0D260</code></p>
+<p>看下面汇编代码，找到 <code>add esp,4C</code>，大概在函数尾部，对此处下断点，然后 F9 让程序继续运行，会在此处触发断点</p>
+<p>堆栈窗口右键选择 <code>全栈</code> 模式，可以看到堆栈信息如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">0EFFA28C(ebp-40E0)   - 0EFFA2E8             - (pointer)0EFFA2E8   </span><br><span class="line">0EFFA290(ebp-40DC)   - 00004000             - (双字)00004000(16384)</span><br><span class="line">0EFFA294(ebp-40D8)   - 67B92D94             - (pointer)WeChatWin.dll+1272D94</span><br><span class="line">0EFFA298(ebp-40D4)   - 67DAFC54             - (pointer)WeChatWin.dll+148FC54</span><br><span class="line">0EFFA29C(ebp-40D0)   - 0EFFF5F8             - (pointer)0EFFF5F8   </span><br><span class="line">0EFFA2A0(ebp-40CC)   - 67CEAF34             - (pointer)WeChatWin.dll+13CAF34</span><br><span class="line">0EFFA2A4(ebp-40C8)   - 0EFFE2E8             - (pointer)0EFFE2E8   </span><br><span class="line">0EFFA2A8(ebp-40C4)   - 00000350             - (双字)00000350(848)</span><br><span class="line">0EFFA2AC(ebp-40C0)   - 0EFFE5BD             - (pointer)0EFFE5BD   </span><br><span class="line">0EFFA2B0(ebp-40BC)   - 0EFFA2E8             - (pointer)0EFFA2E8   </span><br><span class="line">0EFFA2B4(ebp-40B8)   - 00000000             - (双字)00000000(0) </span><br><span class="line">0EFFA2B8(ebp-40B4)   - 00004000             - (双字)00004000(16384)</span><br><span class="line">0EFFA2BC(ebp-40B0)   - 67CEAF24             - (pointer)WeChatWin.dll+13CAF24</span><br><span class="line">0EFFA2C0(ebp-40AC)   - 67CEB244             - (pointer)WeChatWin.dll+13CB244</span><br><span class="line">0EFFA2C4(ebp-40A8)   - 0EFFE2E8             - (pointer)0EFFE2E8   </span><br><span class="line">0EFFA2C8(ebp-40A4)   - 00000080             - (双字)00000080(128)</span><br><span class="line">0EFFA2CC(ebp-40A0)   - 0EFFE2E8             - (pointer)0EFFE2E8   </span><br><span class="line">0EFFA2D0(ebp-409C)   - 00000000             - (双字)00000000(0) </span><br><span class="line">0EFFA2D4(ebp-4098)   - 00000080             - (双字)00000080(128)</span><br><span class="line">0EFFA2D8(ebp-4094)   - 00000000             - (双字)00000000(0) </span><br><span class="line">0EFFA2DC(ebp-4090)   - 00000001             - (双字)00000001(1) </span><br><span class="line">0EFFA2E0(ebp-408C)   - 76EBEF40             - (pointer)KERNEL32.TlsGetValue</span><br><span class="line">0EFFA2E4(ebp-4088)   - 0EFFA328             - (pointer)0EFFA328   </span><br><span class="line">0EFFA2E8(ebp-4084)   - 5B5D495B             - [I][                </span><br><span class="line">0EFFA2EC(ebp-4080)   - 43504D4D             - MMPC                </span><br><span class="line">0EFFA2F0(ebp-407C)   - 5354465F             - _FTS</span><br></pre></td></tr></table></figure>
+
+<p>单击栈顶地址 <code>0EFFA28C(ebp-40E0)</code>，内存窗口跳转到指定地址 <code>0EFFA2E8</code>，可以看到内存信息如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">0EFFA2E8  5B 49 5D 5B 4D 4D 50 43  [I][MMPC</span><br><span class="line">0EFFA2F0  5F 46 54 53 54 68 72 65  _FTSThre</span><br><span class="line">0EFFA2F8  61 64 48 65 6C 70 65 72  adHelper</span><br><span class="line">0EFFA300  5D 5B 46 54 53 54 68 72  ][FTSThr</span><br><span class="line">0EFFA308  65 61 64 48 65 6C 70 65  eadHelpe</span><br><span class="line">0EFFA310  72 2E 63 70 70 2C 20 46  r.cpp, F</span><br><span class="line">0EFFA318  54 53 54 68 72 65 61 64  TSThread</span><br><span class="line">0EFFA320  48 65 6C 70 65 72 3A 3A  Helper::</span><br><span class="line">0EFFA328  50 72 6F 63 65 73 73 43  ProcessC</span><br><span class="line">0EFFA330  68 61 74 4D 73 67 4A 6F  hatMsgJo</span><br><span class="line">0EFFA338  62 49 74 65 6D 2C 20 38  bItem, 8</span><br><span class="line">0EFFA340  34 38 5D 5B 52 61 6E 67  48][Rang</span><br><span class="line">0EFFA348  65 49 6E 66 6F 20 55 70  eInfo Up</span><br><span class="line">0EFFA350  64 61 74 65 52 61 6E 67  dateRang</span><br><span class="line">0EFFA358  65 54 6F 20 44 42 20 52  eTo DB R</span><br><span class="line">0EFFA360  61 6E 67 65 20 3A 20 53  ange : S</span><br><span class="line">0EFFA368  74 61 72 74 20 49 6E 64  tart Ind</span><br><span class="line">0EFFA370  65 78 20 3A 20 31 2C 20  ex : 1, </span><br><span class="line">0EFFA378  53 74 61 72 74 20 49 64  Start Id</span><br><span class="line">0EFFA380  20 3A 20 31 20 65 6E 64   : 1 end</span><br><span class="line">0EFFA388  49 64 20 31 32 37 34 2C  Id 1274,</span><br><span class="line">0EFFA390  20 45 6E 64 20 49 6E 64   End Ind</span><br><span class="line">0EFFA398  65 78 20 3A 20 30 2C 20  ex : 0, </span><br><span class="line">0EFFA3A0  53 74 61 72 74 49 64 20  StartId </span><br><span class="line">0EFFA3A8  3A 20 31 31 34 31 32 32  : 114122</span><br><span class="line">0EFFA3B0  20 45 6E 64 49 64 20 31   EndId 1</span><br><span class="line">0EFFA3B8  31 34 31 32 32 0A 0A 00  14122...</span><br></pre></td></tr></table></figure>
+
+<p>可以得到 <code>ebp-40E0</code> 就是调试输出的数据</p>
+<h5 id="汇编代码-2"><a href="#汇编代码-2" class="headerlink" title="汇编代码"></a>汇编代码</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line">WeChatWin.dll+CF0760 - 55                    - push ebp</span><br><span class="line">WeChatWin.dll+CF0761 - 8B EC                 - mov ebp,esp</span><br><span class="line">WeChatWin.dll+CF0763 - B8 88400000           - mov eax,00004088 &#123; 16520 &#125;</span><br><span class="line">WeChatWin.dll+CF0768 - E8 A3E4FEFF           - call WeChatWin.dll+CDEC10</span><br><span class="line">WeChatWin.dll+CF076D - A1 946BEE67           - mov eax,[WeChatWin.dll+15C6B94] &#123; (-714801034) &#125;</span><br><span class="line">WeChatWin.dll+CF0772 - 33 C5                 - xor eax,ebp</span><br><span class="line">WeChatWin.dll+CF0774 - 89 45 FC              - mov [ebp-04],eax</span><br><span class="line">WeChatWin.dll+CF0777 - 53                    - push ebx</span><br><span class="line">WeChatWin.dll+CF0778 - 8B 5D 0C              - mov ebx,[ebp+0C]</span><br><span class="line">WeChatWin.dll+CF077B - 57                    - push edi</span><br><span class="line">WeChatWin.dll+CF077C - 8B 7D 08              - mov edi,[ebp+08]</span><br><span class="line">WeChatWin.dll+CF077F - 85 FF                 - test edi,edi</span><br><span class="line">WeChatWin.dll+CF0781 - 0F84 AC000000         - je WeChatWin.dll+CF0833</span><br><span class="line">WeChatWin.dll+CF0787 - 85 DB                 - test ebx,ebx</span><br><span class="line">WeChatWin.dll+CF0789 - 0F84 A4000000         - je WeChatWin.dll+CF0833</span><br><span class="line">WeChatWin.dll+CF078F - 56                    - push esi</span><br><span class="line">WeChatWin.dll+CF0790 - 68 80000000           - push 00000080 &#123; 128 &#125;</span><br><span class="line">WeChatWin.dll+CF0795 - 8D 85 7CFFFFFF        - lea eax,[ebp-00000084]</span><br><span class="line">WeChatWin.dll+CF079B - 6A 00                 - push 00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+CF079D - 50                    - push eax</span><br><span class="line">WeChatWin.dll+CF079E - E8 8D6E3D00           - call WeChatWin.dll+10C7630</span><br><span class="line">WeChatWin.dll+CF07A3 - 68 80000000           - push 00000080 &#123; 128 &#125;</span><br><span class="line">WeChatWin.dll+CF07A8 - 8D 85 7CFFFFFF        - lea eax,[ebp-00000084]</span><br><span class="line">WeChatWin.dll+CF07AE - 50                    - push eax</span><br><span class="line">WeChatWin.dll+CF07AF - FF 77 0C              - push [edi+0C]</span><br><span class="line">WeChatWin.dll+CF07B2 - E8 59D40400           - call WeChatWin.dll+D3DC10</span><br><span class="line">WeChatWin.dll+CF07B7 - FF 77 08              - push [edi+08]</span><br><span class="line">WeChatWin.dll+CF07BA - E8 11D40400           - call WeChatWin.dll+D3DBD0</span><br><span class="line">WeChatWin.dll+CF07BF - 68 00400000           - push 00004000 &#123; 16384 &#125;</span><br><span class="line">WeChatWin.dll+CF07C4 - 8B F0                 - mov esi,eax</span><br><span class="line">WeChatWin.dll+CF07C6 - 8D 85 7CBFFFFF        - lea eax,[ebp-00004084]</span><br><span class="line">WeChatWin.dll+CF07CC - 6A 00                 - push 00 &#123; 0 &#125;</span><br><span class="line">WeChatWin.dll+CF07CE - 50                    - push eax</span><br><span class="line">WeChatWin.dll+CF07CF - E8 5C6E3D00           - call WeChatWin.dll+10C7630</span><br><span class="line">WeChatWin.dll+CF07D4 - 8B 4F 04              - mov ecx,[edi+04]</span><br><span class="line">WeChatWin.dll+CF07D7 - 8D 85 7CFFFFFF        - lea eax,[ebp-00000084]</span><br><span class="line">WeChatWin.dll+CF07DD - 53                    - push ebx</span><br><span class="line">WeChatWin.dll+CF07DE - FF 77 10              - push [edi+10]</span><br><span class="line">WeChatWin.dll+CF07E1 - 85 C9                 - test ecx,ecx</span><br><span class="line">WeChatWin.dll+CF07E3 - BA 58CEC867           - mov edx,WeChatWin.dll+136CE58 &#123; (0) &#125;</span><br><span class="line">WeChatWin.dll+CF07E8 - 50                    - push eax</span><br><span class="line">WeChatWin.dll+CF07E9 - 8B 07                 - mov eax,[edi]</span><br><span class="line">WeChatWin.dll+CF07EB - 0F45 D1               - cmovne edx,ecx</span><br><span class="line">WeChatWin.dll+CF07EE - 56                    - push esi</span><br><span class="line">WeChatWin.dll+CF07EF - 52                    - push edx</span><br><span class="line">WeChatWin.dll+CF07F0 - FF 34 85 1C6CEE67     - push [eax*4+WeChatWin.dll+15C6C1C]</span><br><span class="line">WeChatWin.dll+CF07F7 - 8D 85 7CBFFFFF        - lea eax,[ebp-00004084]</span><br><span class="line">WeChatWin.dll+CF07FD - 68 942DB967           - push WeChatWin.dll+1272D94 &#123; (&quot;[%s][%s][%s, %s, %d][%s</span><br><span class="line">&quot;) &#125;</span><br><span class="line">WeChatWin.dll+CF0802 - 68 00400000           - push 00004000 &#123; 16384 &#125;</span><br><span class="line">WeChatWin.dll+CF0807 - 50                    - push eax</span><br><span class="line">WeChatWin.dll+CF0808 - E8 43095DFF           - call WeChatWin.dll+2C1150</span><br><span class="line">WeChatWin.dll+CF080D - 8B 0D 0467F367        - mov ecx,[WeChatWin.dll+1616704] &#123; (0) &#125;</span><br><span class="line"></span><br><span class="line"># --------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line"># ↓ Hook 点</span><br><span class="line"># 记下当前版本地址 WeChatWin.dll+CF0813，手动添加地址，右键选择 反汇编此内存区域，即可到达</span><br><span class="line"></span><br><span class="line">WeChatWin.dll+CF0813 - 83 C4 4C              - add esp,4C &#123; 76 &#125;</span><br><span class="line"></span><br><span class="line"># --------------------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">WeChatWin.dll+CF0816 - 5E                    - pop esi</span><br><span class="line">WeChatWin.dll+CF0817 - 85 C9                 - test ecx,ecx</span><br><span class="line">WeChatWin.dll+CF0819 - 74 18                 - je WeChatWin.dll+CF0833</span><br><span class="line">WeChatWin.dll+CF081B - 8D 85 7CBFFFFF        - lea eax,[ebp-00004084]</span><br><span class="line">WeChatWin.dll+CF0821 - 89 85 78BFFFFF        - mov [ebp-00004088],eax</span><br><span class="line">WeChatWin.dll+CF0827 - 8D 95 78BFFFFF        - lea edx,[ebp-00004088]</span><br><span class="line">WeChatWin.dll+CF082D - 8B 01                 - mov eax,[ecx]</span><br><span class="line">WeChatWin.dll+CF082F - 52                    - push edx</span><br><span class="line">WeChatWin.dll+CF0830 - FF 50 08              - call dword ptr [eax+08]</span><br><span class="line">WeChatWin.dll+CF0833 - 8B 4D FC              - mov ecx,[ebp-04]</span><br><span class="line">WeChatWin.dll+CF0836 - 5F                    - pop edi</span><br><span class="line">WeChatWin.dll+CF0837 - 33 CD                 - xor ecx,ebp</span><br><span class="line">WeChatWin.dll+CF0839 - 5B                    - pop ebx</span><br><span class="line">WeChatWin.dll+CF083A - E8 9ED8FEFF           - call WeChatWin.dll+CDE0DD</span><br><span class="line">WeChatWin.dll+CF083F - 8B E5                 - mov esp,ebp</span><br><span class="line">WeChatWin.dll+CF0841 - 5D                    - pop ebp</span><br><span class="line">WeChatWin.dll+CF0842 - C3                    - ret</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-4-调用调试函数"><a href="#2-4-调用调试函数" class="headerlink" title="2.4. 调用调试函数"></a>2.4. 调用调试函数</h3><h4 id="2-4-1-查找-OutputDebugString"><a href="#2-4-1-查找-OutputDebugString" class="headerlink" title="2.4.1. 查找 OutputDebugString"></a>2.4.1. 查找 OutputDebugString</h4><p>在 CE 工具的 <code>内存查看器</code> 界面，选择 <code>视图</code> - <code>枚举DLL和符号表</code> 打开 <code>枚举DLL</code> 窗口</p>
+<p>Ctrl + F 查找 <code>OutputDebugStringA</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">754D9DA0 - KERNEL32.OutputDebugStringA</span><br></pre></td></tr></table></figure>
+
+<p>得到 OutputDebugStringA 函数地址为 <code>754D9DA0</code></p>
+<h4 id="2-4-2-注入代码"><a href="#2-4-2-注入代码" class="headerlink" title="2.4.2. 注入代码"></a>2.4.2. 注入代码</h4><p>选中 2.3.1 节中 Hook 点的代码位置（WeChatWin.dll + 0xCF0813）</p>
+<p>在 CE 工具的 <code>内存查看器</code> 界面，选择 <code>工具</code> - <code>自动汇编</code> 打开 <code>自动汇编</code> 窗口</p>
+<p>如果是首次操作，可以选择菜单 <code>模板</code> - <code>代码注入</code> 生成模板，然后稍微改动得到如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">alloc(newmem,2048)</span><br><span class="line">label(returnhere)</span><br><span class="line">label(originalcode)</span><br><span class="line">label(exit)</span><br><span class="line"></span><br><span class="line">newmem: &#x2F;&#x2F;this is allocated memory, you have read,write,execute access</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; ---------- 添加注入代码开始 ----------</span><br><span class="line"></span><br><span class="line">pushad</span><br><span class="line">push [ebp-0x40E0]    &#x2F;&#x2F; ebp-0x40E0 为调试数据，见 2.3.1 节</span><br><span class="line">call 0x754D9DA0      &#x2F;&#x2F; 0x754D9DA0 为 OutputDebugStringA 函数地址，见 2.4.1 节</span><br><span class="line">popad</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; ---------- 添加注入代码结束 ----------</span><br><span class="line"></span><br><span class="line">originalcode:</span><br><span class="line">add esp,4C</span><br><span class="line">pop esi</span><br><span class="line">test ecx,ecx</span><br><span class="line"></span><br><span class="line">exit:</span><br><span class="line">jmp returnhere</span><br><span class="line"></span><br><span class="line">&quot;WeChatWin.dll&quot;+CF0813:</span><br><span class="line">jmp newmem</span><br><span class="line">nop</span><br><span class="line">returnhere:</span><br></pre></td></tr></table></figure>
+
+<p>选择执行代码，之后会在 CE 主窗口上出现新的一行，改名为 <code>OutPutDebug</code>，并将其激活（前面的选择框点亮）</p>
+<h4 id="2-4-3-运行-DebugView"><a href="#2-4-3-运行-DebugView" class="headerlink" title="2.4.3. 运行 DebugView"></a>2.4.3. 运行 DebugView</h4><p>将 调试开关 和 调试级别 设置好，注入代码执行，就可以在 DebugView 中看到调试输出的信息</p>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://sqeven.cn" rel="external nofollow noreferrer">sqeven</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://sqeven.cn/2020/06/28/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%90%AF%E8%B0%83%E8%AF%95/">https://sqeven.cn/2020/06/28/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%90%AF%E8%B0%83%E8%AF%95/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="https://sqeven.cn" target="_blank">sqeven</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.png" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/06/28/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%90%AF%E8%B0%83%E8%AF%95/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="微信开启调试">
+                        
+                        <span class="card-title">微信开启调试</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            PC Wechat 开启调试作者：御风
+日期：2020年3月27日
+描述：开启微信调试
+版本：2.8.0.133
+[TOC]
+1. 参考信息PC微信逆向分析の强制输出微信调式信息
+2.  CE 操作2.1. 定位 是否启用调试2.1.1. 
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            sqeven
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/03/25/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Welcome to sqeven!
+sqeven.iosqeven.cnsqeven.mesqeven.com
+StartMore info: sqeven
+
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            sqeven
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="https://sqeven.cn" target="_blank">sqeven</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/sqeven" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:sqeven.io@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1164749586" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1164749586" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
